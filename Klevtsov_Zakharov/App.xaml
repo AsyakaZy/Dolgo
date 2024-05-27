@@ -8,6 +8,5 @@
             <Setter Property="Foreground" Value="blue"></Setter>
             <Setter Property="Height" Value="450px"></Setter>
         </Style>
-         
     </Application.Resources>
 </Application>
