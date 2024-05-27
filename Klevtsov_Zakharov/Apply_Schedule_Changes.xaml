@@ -1,0 +1,26 @@
+﻿<Window x:Class="Klevtsov_Zakharov.Apply_Schedule_Changes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Klevtsov_Zakharov"
+        mc:Ignorable="d"
+        Title="Apply_Schedule_Changes" Height="300" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="97*"/>
+            <RowDefinition Height="172*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Please select the text file with the changes" HorizontalAlignment="Left" Margin="23,24,0,0" VerticalAlignment="Top" RenderTransformOrigin="-6.816,-0.685" Height="26" Width="233"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="41,55,0,0" TextWrapping="Wrap" BorderBrush="Black" VerticalAlignment="Top" Width="281"/>
+        <Button Content="import" HorizontalAlignment="Left" Margin="358,55,0,0" VerticalAlignment="Top" Width="87" BorderBrush="Black" Background="Transparent" Height="23"/>
+        <Label Content="Results" HorizontalAlignment="Left" Margin="23,10,0,0" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="47"/>
+        <Label Content="Sucesfull Changes Applied:" HorizontalAlignment="Left" Margin="32,36,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="-6.6,0.753" Height="26" Width="157"/>
+        <Label Content="[xxxx]" HorizontalAlignment="Left" Margin="372,36,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="Dublicated Records Discarded:" HorizontalAlignment="Left" Margin="32,67,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="-6.6,0.753" Height="26" Width="178"/>
+        <Label Content="[xxxx]" HorizontalAlignment="Left" Margin="372,67,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="Record with missing flieds discarded:" HorizontalAlignment="Left" Margin="32,98,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="-6.6,0.753" Height="26" Width="224"/>
+        <Label Content="[xxxx]" HorizontalAlignment="Left" Margin="372,98,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

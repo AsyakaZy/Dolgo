@@ -1,0 +1,46 @@
+﻿<Window x:Class="Klevtsov_Zakharov.Schedule_edit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Klevtsov_Zakharov"
+        mc:Ignorable="d"
+        Title="Schedule_edit" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <GroupBox Header="Flight  route" Width="750" Height="100">
+                <StackPanel Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal" Margin="5" VerticalAlignment="Top">
+                        <Label Content="From: "></Label>
+                        <Label>AUH</Label>
+                        <Label Content="To: " Margin="30 0 0 0"></Label>
+                        <Label>ADE</Label>
+                        <Label Content="Aircraft: " Margin="30 0 0 0"></Label>
+                        <Label>Boeing 739</Label>
+                    </StackPanel>
+                </StackPanel>
+            </GroupBox>
+        </Grid>
+        <Grid Grid.Row="1">
+            <StackPanel Orientation="Horizontal" Margin="15">
+                <Label Content="Date:" Margin="15 0 0 0"></Label>
+                <TextBox x:Name="dateBox" Width="100" Text="[dd/mm/yyyy]" Margin="30 0 0 0"></TextBox>
+                <Label Content="Time:" Margin="15 0 0 0"></Label>
+                <TextBox x:Name="timeBox" Width="70" Text="11:18" Margin="30 0 0 0"></TextBox>
+                <Label  Content="Economy price:" Margin="15 0 0 0"></Label>
+                <TextBox x:Name="priceBox" Width="50" Text="530" Margin="30 0 0 0"></TextBox>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="2">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="40">
+                <Button Content="Update" Width="150" HorizontalAlignment="Right" Height="25" Background="White" Click="UpdateButton_Click"></Button>
+                <Button Content="Cancel" Width="150" HorizontalAlignment="Right" Height="25" Background="White" Margin="50 0 0 0" Click="CancelButton_Click"></Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

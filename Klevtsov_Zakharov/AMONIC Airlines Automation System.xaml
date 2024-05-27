@@ -1,0 +1,49 @@
+﻿<Window x:Class="Klevtsov_Zakharov.AMONIC_Airlines_Automation_System"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Klevtsov_Zakharov"
+        mc:Ignorable="d"
+        Title="AMONIC_Airlines_Automation_System" Height="450" Width="800" MinHeight="450" MinWidth="800" MaxHeight="450" MaxWidth="800">
+    <Grid Margin="0,0,0,83">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35*"></RowDefinition>
+            <RowDefinition Height="297*"></RowDefinition>
+            <RowDefinition Height="89*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <Button Content="Add User" Margin="0 0 10 0" Width="75" Background="White" BorderBrush="Snow" Click="Button_Click"></Button>
+                <Button Content="Exit" Width="50" Background="White" BorderBrush="Snow" Click="Button_Click_1"></Button>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1">
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <Label Content="Office: "></Label>
+                <ComboBox x:Name="officesort" Width="200" Height="25" VerticalAlignment="Top" BorderBrush="White" DisplayMemberPath="title" SelectedValuePath="title" SelectedIndex="0" SelectionChanged="officesort_SelectionChanged"/>
+            </StackPanel>
+            <StackPanel Margin="0 35 0 0">
+                <DataGrid x:Name="AllUsers" AutoGenerateColumns="False" SelectionChanged="AllUsers_SelectionChanged">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding Id}" Header="Id" Width="50" Foreground="Black"></DataGridTextColumn>
+                        <DataGridTextColumn Binding="{Binding FirstName}" Header="Name" Width="50" Foreground="Black"></DataGridTextColumn>
+                        <DataGridTextColumn Binding="{Binding LastName}" Header="Last Name" Width="80"></DataGridTextColumn>
+                        <DataGridTextColumn Binding="{Binding Birthday}" Header="Age"></DataGridTextColumn>
+                        <DataGridTextColumn Binding="{Binding RoleName}" Header="User Role" Width="100"></DataGridTextColumn>
+                        <DataGridTextColumn Binding="{Binding Email}" Header="Email Address" Width="150"></DataGridTextColumn>
+                        <DataGridTextColumn Binding="{Binding Office}" Header="Office" Width="100"></DataGridTextColumn>
+
+                    </DataGrid.Columns>
+                </DataGrid>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="2">
+            <StackPanel Orientation="Horizontal" Margin="10px"  HorizontalAlignment="Left">
+
+                <Button Content="Change Role" HorizontalAlignment="Left" Width="100" Height="25" Margin="0 0 50 0" Background="White" Click="Button_Click_2"></Button>
+                <Button Content="Enable/Disable Login" Width="150" HorizontalAlignment="Right" Height="25" Background="White" Click="Button_Click_3" ></Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

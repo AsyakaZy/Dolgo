@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="db88933eb19440c3b0d0a3ddd719fa30" Name="Diagram1">
+        <EntityTypeShape EntityType="User05Model.Aircraft" Width="1.5" PointX="3.75" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="User05Model.AirportRoutes" Width="1.5" PointX="3" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="User05Model.Airports" Width="1.5" PointX="0.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="User05Model.Amenties" Width="1.5" PointX="3.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="User05Model.AmentiesTickets" Width="1.5" PointX="10.5" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="User05Model.CabinTypes" Width="1.5" PointX="6" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="User05Model.Countries" Width="1.5" PointX="3" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="User05Model.Offices" Width="1.5" PointX="5.25" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="User05Model.Roles" Width="1.5" PointX="11.25" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="User05Model.Routes" Width="1.5" PointX="0.75" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="User05Model.Schedules" Width="1.5" PointX="6" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="User05Model.Tickets" Width="1.5" PointX="8.25" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="User05Model.Users" Width="1.5" PointX="13.5" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="User05Model.UserssInfo" Width="1.5" PointX="15.75" PointY="9" IsExpanded="true" />
+        <AssociationConnector Association="User05Model.FK_AirportRoutes_Airports" ManuallyRouted="false" />
+        <AssociationConnector Association="User05Model.FK_AirportRoutes_Airports1" ManuallyRouted="false" />
+        <AssociationConnector Association="User05Model.FK_AirportRoutes_Routes" ManuallyRouted="false" />
+        <AssociationConnector Association="User05Model.FK_AmentiesTickets_Amenties" ManuallyRouted="false" />
+        <AssociationConnector Association="User05Model.FK_AmentiesTickets_Tickets" ManuallyRouted="false" />
+        <AssociationConnector Association="User05Model.FK_UserssInfo_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="User05Model.AircraftSchedules" ManuallyRouted="false" />
+        <AssociationConnector Association="User05Model.AirportCountry" ManuallyRouted="false" />
+        <AssociationConnector Association="User05Model.AmentiesCabinType" ManuallyRouted="false" />
+        <AssociationConnector Association="User05Model.CabinTypesTickets" ManuallyRouted="false" />
+        <AssociationConnector Association="User05Model.CountryTickets" ManuallyRouted="false" />
+        <AssociationConnector Association="User05Model.OfficesCountry" ManuallyRouted="false" />
+        <AssociationConnector Association="User05Model.SchedulesRoutes" ManuallyRouted="false" />
+        <AssociationConnector Association="User05Model.SchedulesTickets" ManuallyRouted="false" />
+        <AssociationConnector Association="User05Model.UserRoles" ManuallyRouted="false" />
+        <AssociationConnector Association="User05Model.UsersOffices" ManuallyRouted="false" />
+        <AssociationConnector Association="User05Model.UsersTickets" ManuallyRouted="false" />
+        <AssociationConnector Association="User05Model.UsersUserInfo" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
